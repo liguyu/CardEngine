@@ -1,0 +1,45 @@
+﻿生成启动时间为 2014/4/24 10:20:11。
+     1>项目“G:\fyh\our-card-system\CardEngine\Commons\Commons.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“Debug\Commons.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“Debug\Commons.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I../ThirdParty/log4cplus/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D COMMONS_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Des\des.cpp hex\hex.cpp Logger.cpp PsamCard.cpp UserCard.cpp
+         UserCard.cpp
+         PsamCard.cpp
+         Logger.cpp
+         hex.cpp
+         des.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Commons.dll.embed.manifest.res" Debug\Commons_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\fyh\our-card-system\CardEngine\Debug\Commons.dll" /INCREMENTAL /NOLOGO /LIBPATH:../ThirdParty/log4cplus/lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Commons.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\fyh\our-card-system\CardEngine\Debug\Commons.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\fyh\our-card-system\CardEngine\Debug\Commons.lib" /MACHINE:X86 /DLL Debug\Commons.dll.embed.manifest.res
+         Debug\des.obj
+         Debug\hex.obj
+         Debug\Logger.obj
+         Debug\PsamCard.obj
+         Debug\UserCard.obj
+            正在创建库 G:\fyh\our-card-system\CardEngine\Debug\Commons.lib 和对象 G:\fyh\our-card-system\CardEngine\Debug\Commons.exp
+       Manifest:
+         正在删除文件“Debug\Commons.dll.embed.manifest”。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\Commons.dll.embed.manifest" /manifest Debug\Commons.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\Commons.dll.embed.manifest.res" Debug\Commons_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"G:\fyh\our-card-system\CardEngine\Debug\Commons.dll" /INCREMENTAL /NOLOGO /LIBPATH:../ThirdParty/log4cplus/lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Commons.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"G:\fyh\our-card-system\CardEngine\Debug\Commons.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"G:\fyh\our-card-system\CardEngine\Debug\Commons.lib" /MACHINE:X86 /DLL Debug\Commons.dll.embed.manifest.res
+         Debug\des.obj
+         Debug\hex.obj
+         Debug\Logger.obj
+         Debug\PsamCard.obj
+         Debug\UserCard.obj
+            正在创建库 G:\fyh\our-card-system\CardEngine\Debug\Commons.lib 和对象 G:\fyh\our-card-system\CardEngine\Debug\Commons.exp
+         Commons.vcxproj -> G:\fyh\our-card-system\CardEngine\Debug\Commons.dll
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Commons.unsuccessfulbuild”。
+         正在对“Debug\Commons.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“G:\fyh\our-card-system\CardEngine\Commons\Commons.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.79
