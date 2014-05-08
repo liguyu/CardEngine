@@ -333,6 +333,27 @@ int ENG_ReadCardNoAndSecondTrack( char *cardNo,char *secondTrack )
   return ret;
 }
 
+int ENG_ReadCardNo( char *cardNo )
+{
+  int ret = SUCCESS;
+  CUserCardService *userCardService = appContext.GetUserCardService();
+  if ( userCardService == NULL )
+  {
+    return SYS_CARD_TYPE_ERR;
+  }
+  userCardService->ClearAllFieldReadMode();
+  userCardService->SetFieldReadMode(CF_CARDNO);
+  ret = userCardService->ReadCard();
+  if(ret)
+  {
+	  return ret;
+  }
+  ret = userCardService->GetFieldValue( CF_CARDNO, cardNo );
+  if ( ret )
+    ENG_SetLastErrorMsg( userCardService->GetLastErrorMsg( NULL ) );
+  return ret;
+}
+
 int ENG_SetPsamSlot( int slot )
 {
   CPsamCardService * psamCardService = appContext.GetPsamCardService();

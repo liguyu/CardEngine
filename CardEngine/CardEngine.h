@@ -198,6 +198,13 @@ extern "C"
 	/// @return     :0 表示成功
 	CARDENGINE_API int ENG_ReadCardNoAndSecondTrack( char *cardNo,char *secondTrack );
 
+	/// @brief 读取卡号
+	///
+	/// 调用该方法读取字段的值
+	/// @param[out] :cardNo 卡号
+	/// @return     :0 表示成功
+	CARDENGINE_API int ENG_ReadCardNo( char *cardNo );
+
 	/// @brief 设置要操作的psam卡座
 	///
 	/// @param[in ] :slot psam卡座，1、 2、 3 各为SAM1(大卡座)、SAM2、SAM3

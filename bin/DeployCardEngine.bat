@@ -5,7 +5,7 @@ set /p mode=Please choose deploy mode(1-Debug 2-Release):
 set dirName=
 if "%mode%"=="1" (set dirName=Debug) else (set dirName=Release) 
 
-set dir=.\CardEngine_%date:~0,2%%date:~3,2%%date:~6,4%
+set dir=.\CardEngine_%date:~0,4%%date:~5,2%%date:~8,2%
 echo %dir%
 md %dir%
 
