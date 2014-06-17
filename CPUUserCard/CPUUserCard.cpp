@@ -694,12 +694,12 @@ namespace Engine
 		return ret;
 	  }
 	  
-	  /*//更新应用主控秘钥
+	  //更新应用主控秘钥
 	  ret = UpdateCardKey("84F000011C","14100101FF",defaultCardKeys.DACK,newCardKeys.DACK);
 	  if(ret)
 	  {
 		return ret;
-	  }*/
+	  }
 
       ret = this->SelectADFByFI( MF );
       if ( ret )
