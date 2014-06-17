@@ -670,35 +670,37 @@ namespace Engine
       }
 	  
 	  //更新外部认证秘钥05
-	  ret = UpdateCardKey("84D4F9051C","15F9F0F0CC33",defaultCardKeys.DACK,newCardKeys.DACK1);
+	  ret = UpdateCardKey("84F000031C","14100105FF",defaultCardKeys.DACK,newCardKeys.DACK1);
 	  if(ret)
 	  {
 		return ret;
 	  }
 	  //更新外部认证秘钥06
-	  ret = UpdateCardKey("84D4F9061C","15F9F0F0CC33",defaultCardKeys.DACK,newCardKeys.DACK2);
+	  ret = UpdateCardKey("84F000041C","14100106FF",defaultCardKeys.DACK,newCardKeys.DACK2);
 	  if(ret)
 	  {
 		return ret;
 	  }
 	  //更新外部认证秘钥07
-	  ret = UpdateCardKey("84D4F9071C","15F9F0F0CC33",defaultCardKeys.DACK,newCardKeys.DACK3);
+	  ret = UpdateCardKey("84F000051C","14100107FF",defaultCardKeys.DACK,newCardKeys.DACK3);
 	  if(ret)
 	  {
 		return ret;
 	  }
 	  //更新应用维护秘钥
-	  ret = UpdateCardKey("84D4F6011C","15F6F0F0FF33",defaultCardKeys.DACK,newCardKeys.DAMK);
+	  ret = UpdateCardKey("84F000021C","14300102FF",defaultCardKeys.DACK,newCardKeys.DAMK);
 	  if(ret)
 	  {
 		return ret;
 	  }
-	  //更新应用主控秘钥
-	  ret = UpdateCardKey("84D4F9001C","15F9F0F0AA33",defaultCardKeys.DACK,newCardKeys.DACK);
+	  
+	  /*//更新应用主控秘钥
+	  ret = UpdateCardKey("84F000011C","14100101FF",defaultCardKeys.DACK,newCardKeys.DACK);
 	  if(ret)
 	  {
 		return ret;
-	  }
+	  }*/
+
       ret = this->SelectADFByFI( MF );
       if ( ret )
       {
@@ -720,8 +722,9 @@ namespace Engine
 
 		memset(plainData,0x00,sizeof(plainData));
 		Engine::Func::hex2dec(data,12,plainData,len);
-		memcpy(plainData+6,newKey,16);
-		plainData[22] = 0x80;
+		memcpy(plainData+5,newKey,16);
+		plainData[21] = 0x80;
+		plainData[22] = 0x00;
 		plainData[23] = 0x00;
 
 		memset(encryptedData,0x00,sizeof(encryptedData));
